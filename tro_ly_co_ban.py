@@ -2,17 +2,7 @@ import speech_recognition
 from gtts import gTTS
 import os
 import playsound
-from datetime import date, datetime
-
-while True:
-    # khởi tạo
-    ai_brain = " " # Ban đầu nó chưa được học gì cả nên cũng chưa có thông tin
-    ai_ear = speech_recognition.Recognizer() # nghe người dùng nói
-
-    with speech_recognition.Microphone() as mic:
-        print("AI: Đang nghe |--___--|")
-        audio = ai_ear.record(mic, duration = 5)
-        # AI nghe trong vòng 5 giây rồi tắt mic
+from datetime import date, dat
         print("\nAI: ... ")
     try:
         you = ai_ear.recognize_google(audio, language = 'vi-VN')
